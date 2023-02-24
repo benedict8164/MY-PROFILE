@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+</head>
+<body class="bg-secondary">
+     <nav class="p-6 bg-secondary  md:flex md:items-center md:justify-between  fixed w-full ">
+            <div class="flex justify-between items-center">
+                <span class="md:mx-10 md:pl-3  text-3xl font-custom text-primary hover:text-tertiary duration-500">
+                    <a href="#bs" class="cursor-pointer">BS</a>
+                </span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full md:w-auto md:py-0 py-3 md:pl-0 
+            md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 pl-2.5  bg-secondary left-0 md:pr-10
+            ">
+                <li class="mx-4 ">
+                    <a href="#what-i-do" class=" font-bold text-primary hover:text-tertiary duration-500 my-6 md:my-0">WHAT I DO</a>
+                </li>
+                <li class="mx-4">
+                    <a href="#about-me" class="  font-bold text-primary hover:text-tertiary duration-500  md:my-0">ABOUT ME</a>
+                </li>
+                <li class="mx-4">
+                    <a href="#my-skills" class=" font-bold text-primary hover:text-tertiary duration-500 my-6 md:my-0">MY SKILLS</a>
+                </li>
+            </ul>
+     </nav>
+
+     <!--javascript code for navigation menu-->
+     <script>
+        function Menu(e){
+            let list =document.querySelector('ul');
+
+            e.name==='menu'? (e.name ="close",list.classList.add('top-[80px]'),list.classList.add('opacity-100')):
+            (e.name ="menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+
+        }
+     </script>
+
+     <!--HOME PAGE-->
+
+    <section id="bs" class="p-4 md:py-4 md:px-20  bg-secondary">
+    <div class="flex flex-col md:flex-row">
+      <div class="w-full md:w-2/4 mt-10 pt-2">
+<!--
+        <img src="./images/myavatar.png" class="w-3/4 md:w-full" alt="">
+        <img src="./images/myavatar.png" class="w-full md:w-3/4" >
+        md:w-4/5
+-->
+  
+        <img src="./images/myavatar.png" class="w-full md:w-full">
+      </div>
+      <div class="py-6 md:py-0 w-full md:w-2/4 justify-items-center mt-0 pt-0 md:mt-10 md:pt-16">
+        <div class="text-4xl font-normal">Hi I'm</div>
+        <div class="text-5xl md:text-7xl font-primary font-custom mt-2 md:mt-4">BENEDICT</div>
+        <div class="text-5xl md:text-7xl font-primary font-custom">SOLANO</div>
+        <p class="text-base md:text-2xl py-2 md:mt-2">Graduated of Bachelor of Science Information Technology.</p>
+        <div class="flex mt-2 md:mt-4">
+          <div class="py-1 px-20 bg-shades rounded-full"></div>
+          <div class="py-1 px-2 bg-gray-400 rounded-full ml-2"></div>
+        </div>
+        <div class="flex mt-4 md:mt-6">
+          <a href="./images/benedictresume.pdf"  target="_blank">
+          <button class="mr-4 mt-1 bg-white border-primary text-gray-800 font-bold py-2 px-2 rounded inline-flex items-center">
+            <svg class="fill-current w-4 h-4 mr-2 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+            <span>Download CV</span>
+          </button>
+          </a>
+        
+          <div class="text-5xl text-primary">
+            <a href="https://web.facebook.com/benedict.solano.7/" target="_blank">
+            <iconify-icon icon="ri:facebook-box-fill"></iconify-icon>
+            </a>
+          </div>
+          <div class="text-5xl text-primary">
+            <a href="https://www.instagram.com/solanobenedict/" target="_blank">
+            <iconify-icon icon="typcn:social-instagram"></iconify-icon>
+            </a>
+          </div>
+          <div class="text-5xl text-primary">
+            <a href="https://twitter.com/bensolano11" target="_blank">
+            <iconify-icon icon="ant-design:twitter-square-filled">
+            </a>
+            </iconify-icon></div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!--WHAT I DO-->
+    <!--<section class="bg-tertiary px-4 py-8 md:pt-20">-->
+    <section id="what-i-do" class="bg-tertiary px-4 py-8 md:px-20 md:py-20">
+    <div class="flex flex-col md:flex-row ">
+      <div class="w-full md:w-1/3 bg-secondary p-8 md:p-12 rounded-md mr-0 md:mr-6 mb-4 md:mb-0">
+        <div class="text-3xl font-custom">Web Design</div>
+        <div class="flex mt-4">
+          <div class="py-1 px-10 bg-shades rounded-full"></div>
+          <div class="py-1 px-2 bg-gray-400 rounded-full ml-2"></div>
+        </div>
+        <p class="py-6 md:text-right">I love creating Web design specially in color combination, font style, size and images layout position.
+          I started creating website when i was 1st year in college using pure HTML, then have a idea in using CSS.
+        </p>
+          <div>
+           <!--<button type="button" class="text-white bg-primary rounded-md px-10 py-2">View More</button>-->
+          </div>
+      </div>
+      <div class="w-full md:w-1/3 bg-secondary p-8 md:p-12 rounded-md mb-4 md:mb-0">
+        <div class="text-3xl font-custom">Photo/Video edit</div>
+        <div class="flex mt-4">
+          <div class="py-1 px-10 bg-shades rounded-full"></div>
+          <div class="py-1 px-2 bg-gray-400 rounded-full ml-2"></div>
+        </div>
+        <p class="py-6 md:text-right">Editing in my laptop using Photoshop and Illustrator is one of my favorite hobby, 
+          specially when upload it in social media and get many likes. Sometimes I have a client 
+          that offer edit their picture.</p>
+          <div>
+            <!--<button type="button" class="text-white bg-primary rounded-md px-10 py-2">View More</button>-->
+          </div>
+      </div>
+      <div class="w-full md:w-1/3 bg-secondary p-8 md:p-12 rounded-md ml-0 md:ml-6">
+        <div class="text-3xl font-custom">Internet Set-up</div>
+        <div class="flex mt-4">
+          <div class="py-1 px-10 bg-shades rounded-full"></div>
+          <div class="py-1 px-2 bg-gray-400 rounded-full ml-2"></div>
+        </div>
+        <p class="py-6 md:text-justify">I also set-up internet connection using globe modem wifi. I take my advantage as an information
+           technology and have experience in fiber-optic connection. Now a days the internet is required due to global pandemic.</p>
+          <div>
+            <!--<button type="button" class="text-white bg-primary rounded-md px-10 py-2">View More</button>-->
+          </div>
+      </div>
+    </div>
+    </section> 
+    
+    <section id="about-me" class="flex bg-primary px-4 py-8 md:px-20 pt-4 md:pt-20">
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full md:w-2/4  ">
+            <img src="./images/MY VECTOR-1.png" class="md:w-3/4"  alt="" >
+          </div>
+          <div class="w-full md:w-2/4">
+            <div class="bg-secondary rounded-md p-8 md:p-12 mb-0 md:mb-12">
+              <div class="text-3xl font-custom">About Me</div>
+              <div class="flex mt-4">
+                <div class="py-1 px-10 bg-shades rounded-full"></div>
+                <div class="py-1 px-2 bg-gray-400 rounded-full ml-2"></div>
+              </div>
+              <p class="py-6">Hi, I’m Benedict, Currently Living in Maja Village, 
+                Brgy Dila Santa Rosa Laguna 24 years of age. My permanent address was in Mindoro. 
+                The reason why I’m here in Laguna to experience more and also explore what is being independent
+                 person and help my family in financial.</p>
+      
+                <div class="text-3xl font-custom">Education</div>
+                <div class="flex mt-4">
+                  <div class="py-1 px-10 bg-shades rounded-full"></div>
+                  <div class="py-1 px-2 bg-gray-400 rounded-full ml-2"></div>
+                </div>
+              <p class="py-6">I finish my elementary in Orconuma, Bongabong Oriental Mindoro. Then secondary in 
+                Masaguisi National High School and My college in Mindoro State University.</p>
+      
+                <div class="text-3xl font-custom">Experienced</div>
+                <div class="flex mt-4">
+                  <div class="py-1 px-10 bg-shades rounded-full"></div>
+                  <div class="py-1 px-2 bg-gray-400 rounded-full ml-2"></div>
+                </div>
+              <p class="py-6">I finish my OJT as a Fiber optic technician. The nature of this work is all about Telecommunication,
+                 that’s why it improves my skills about networking, like splicing fiber optic cable, modem troubleshooting, telephone
+                  trouble shouting. My first job experience is all about electronics company. I hired as an operator, this improved me 
+                  as a good employee, maximize my knowledge how the integrated circuits work and team player person, especially in production area.
+                   The third experience is also an electronics company.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+      
+      <!--OTHERS SAYS-->
+      
+      <section class="px-4 py-8 md:p-20 bg-secondary ">
+        <div class="text-center text-4xl md:text-5xl font-custom md:pt-10 md:mt-10">What Others Say To Me</div>
+        <div class="flex mt-4 mb-6 md:mb-14 justify-center">
+          <div class="py-1 px-10 bg-shades rounded-full"></div>
+          <div class="py-1 px-2 bg-gray-400 rounded-full ml-2"></div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full md:w-1/3 mr-0 md:mr-4 mb-4 md:mb-0">
+            <div class="bg-white p-6 rounded-md">
+              <div class="flex">
+                <div class="w-1/4">
+                  <img src="./images/noem.jpg" class="w-3/4 rounded-full" alt="">
+                </div>
+                <div class="w-3/4">
+                  <div class="text-base md:text-2xl font-custom font-bold">Noemielyn Fallan</div>
+                  <div class="text-base text-gray-400 font-normal">Classmate in College</div>
+                  <div class="text-xs mb-3">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+              <div class="">
+                <p>He can work effectively with less supervision. He is also capable of 
+                  completing his tasks on time. Benedict has perseverance in the field of 
+                  work and always willing to learn new thing and skill.
+            
+                </p>
+                
+              </div>
+            </div>
+          </div>
+      
+          <div class="w-full md:w-1/3 mr-0 md:mr-4 mb-4 md:mb-0">
+            <div class="bg-white p-6 rounded-md">
+              <div class="flex">
+                <div class="w-1/4">
+                  <img src="./images/Kim.jpg" class="w-3/4 rounded-full" alt="">
+                </div>
+                <div class="w-3/4">
+                  <div class="text-base md:text-2xl font-custom font-bold">Kim Gerald Gonzales</div>
+                  <div class="text-base text-gray-400 font-normal">Digital Fiber-TV Technician</div>
+                  <div class="text-xs mb-3">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+              <div>
+                <p class=" md:flex md:text-justify">Can work efficiently with any work given. Hardworking and eager to learn new knowledge
+                   and skills. Can communicate properly with his superiors and other co-workers.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="w-full md:w-1/3 mr-0 md:mr-4">
+            <div class="bg-white p-6 rounded-md">
+              <div class="flex">
+                <div class="w-1/4">
+                  <img src="./images/evan.jpg" class="w-3/4 rounded-full" alt="">
+                </div>
+                <div class="w-3/4">
+                  <div class="text-base md:text-2xl font-custom font-bold">Evangeline Delos Ama</div>
+                  <div class="text-base text-gray-400 font-normal">GL in STMicroelectronics</div>
+                  <div class="text-xs mb-3">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+              <div>
+                <p>Benedict is Efficiently manned the Burn In operations can assigned in any other platform such as IA.					
+              
+                  DISCIPLINE 														
+                  behaving in a manner that is aligned with the Company's Code of Conduct and other related Company standards.							
+                  
+                    No Disciplinary Action in Attendance, Quality and Productivity are all EXCEPTIONAL.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--MY SKILLS-->
+      
+      <section id="my-skills" class="px-4 py-8 md:p-20 bg-primary">
+        <div class="text-white text-center text-4xl md:text-5xl font-custom">Tools I Exploring Right Now</div>
+        <div class="flex mt-4 mb-14 justify-center">
+          <div class="py-1 px-10 bg-secondary rounded-full"></div>
+          <div class="py-1 px-2 bg-gray-400 rounded-full ml-2"></div>
+        </div>
+        <div class="flex my-8 justify-center">
+            <div class="text-5xl text-secondary ml-2"><iconify-icon icon="simple-icons:adobeillustrator"></iconify-icon></div>
+            <div class="text-5xl text-secondary ml-2"><iconify-icon icon="simple-icons:adobephotoshop"></iconify-icon></div>
+            <div class="text-5xl text-secondary ml-2"><iconify-icon icon="akar-icons:html-fill"></iconify-icon></div>
+            <div class="text-5xl text-secondary ml-2"><iconify-icon icon="akar-icons:css-fill"></iconify-icon></div>
+            <div class="text-5xl text-secondary ml-2"><iconify-icon icon="iconoir:figma"></iconify-icon></div>
+        </div>
+        <div class="flex my-4 justify-center mt-16">
+          <a href="./images/benedictresume.pdf"  target="_blank">
+            <button class="mr-4 mt-1 bg-white border-primary text-gray-800 font-bold py-2 px-2 rounded inline-flex items-center">
+                <svg class="fill-current w-4 h-4 mr-2 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                <span>Download CV</span>
+              </button>
+          </a>
+            <div class="text-5xl text-secondary">
+              <a href="https://web.facebook.com/benedict.solano.7/" target="_blank" >
+              <iconify-icon icon="ri:facebook-box-fill"></iconify-icon>
+              </a>
+            </div>
+            <div class="text-5xl text-secondary">
+              <a href="https://www.instagram.com/solanobenedict/" target="_blank">
+              <iconify-icon icon="typcn:social-instagram"></iconify-icon>
+              </a>
+            </div>
+            <div class="text-5xl text-secondary">
+              <a href="https://twitter.com/bensolano11" target="_blank">
+              <iconify-icon icon="ant-design:twitter-square-filled"></iconify-icon>
+              </a>
+            </div>
+        </div>
+        <div class="text-white text-center">
+          <span class="font-bold">Benedict J. Solano Portfolio</span> | All rights Reserved
+        </div>
+      </section>
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+   
+</body>
+</html>
