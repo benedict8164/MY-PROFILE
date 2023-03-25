@@ -71,8 +71,8 @@
       </div>
       <div class="py-6 md:py-0 w-full md:w-2/4 justify-items-center mt-0 pt-0 md:mt-10 md:pt-16">
         <div class="text-4xl font-normal">Hi I'm</div>
-        <div class="text-5xl md:text-7xl font-primary font-custom mt-2 md:mt-4">BENEDICT</div>
-        <div class="text-5xl md:text-7xl font-primary font-custom">SOLANO</div>
+        <div id="auto-type" class="text-5xl md:text-7xl font-primary font-custom mt-2 md:mt-4 "></div>
+       <!--  <div class="text-5xl md:text-7xl font-primary font-custom">SOLANO</div> -->
         <p class="text-base md:text-2xl py-2 md:mt-2">Graduated of Bachelor of Science Information Technology.</p>
         <div class="flex mt-2 md:mt-4">
           <div class="py-1 px-20 bg-shades rounded-full"></div>
@@ -105,6 +105,30 @@
       </div>
     </div>
     </section>
+    <!-- Name animation code -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <script type="text/javascript">
+      var type=new Typed("auto-type",{
+        strings:["BENEDICT"],
+        typeSpeed: 150,
+        loop:true
+      })
+
+     /*  var i=0,text;
+      text="BENEDICT";
+
+      function typing(){
+        if (i<=text.length){
+          document.getElementById("text-ben").innerHTML += text.charAt(i);
+          
+          setTimeout(typing,1000);
+          i++
+        }
+
+      }
+      typing(); */
+    </script>
 
     <!--WHAT I DO-->
     <!--<section class="bg-tertiary px-4 py-8 md:pt-20">-->
